@@ -1,0 +1,29 @@
+
+# How create a git repository
+
+$ mkdir ./myProject
+$ cd ./myProject
+$ git init
+$ echo 'Hello World' > README
+$ git add README
+$ git commit -m 'first commit'
+
+# How link a local git repository with a remote one on github.com
+
+$ git remote add origin git@github:username/myProject.git
+$ git push origin master
+
+# Useful commands
+
+$ git config --global user.name "Thomas Charpentier"
+$ git config --global user.email thomas.charpentier@etu.enseeiht.fr
+$ git config --global core.editor emacs
+$ git config --global color.status auto
+$ git config --global color.branch auto
+$ git config --global color.interactive auto
+$ git config --global color.diff auto
+
+# Show config
+
+$ git config --list
+
